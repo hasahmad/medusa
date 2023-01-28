@@ -26,7 +26,7 @@ TransactionBaseService.constructor
 
 #### Defined in
 
-[packages/medusa/src/services/product-category.ts:23](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/services/product-category.ts#L23)
+[packages/medusa/src/services/product-category.ts:35](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L35)
 
 ## Properties
 
@@ -40,7 +40,7 @@ TransactionBaseService.\_\_configModule\_\_
 
 #### Defined in
 
-[packages/medusa/src/interfaces/transaction-base-service.ts:10](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/interfaces/transaction-base-service.ts#L10)
+[packages/medusa/src/interfaces/transaction-base-service.ts:10](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/interfaces/transaction-base-service.ts#L10)
 
 ___
 
@@ -54,7 +54,31 @@ TransactionBaseService.\_\_container\_\_
 
 #### Defined in
 
-[packages/medusa/src/interfaces/transaction-base-service.ts:9](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/interfaces/transaction-base-service.ts#L9)
+[packages/medusa/src/interfaces/transaction-base-service.ts:9](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/interfaces/transaction-base-service.ts#L9)
+
+___
+
+### \_\_moduleDeclaration\_\_
+
+• `Protected` `Optional` `Readonly` **\_\_moduleDeclaration\_\_**: `Record`<`string`, `unknown`\>
+
+#### Inherited from
+
+TransactionBaseService.\_\_moduleDeclaration\_\_
+
+#### Defined in
+
+[packages/medusa/src/interfaces/transaction-base-service.ts:11](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/interfaces/transaction-base-service.ts#L11)
+
+___
+
+### eventBusService\_
+
+• `Protected` `Readonly` **eventBusService\_**: [`EventBusService`](EventBusService.md)
+
+#### Defined in
+
+[packages/medusa/src/services/product-category.ts:25](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L25)
 
 ___
 
@@ -68,7 +92,7 @@ TransactionBaseService.manager\_
 
 #### Defined in
 
-[packages/medusa/src/services/product-category.ts:19](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/services/product-category.ts#L19)
+[packages/medusa/src/services/product-category.ts:27](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L27)
 
 ___
 
@@ -78,7 +102,7 @@ ___
 
 #### Defined in
 
-[packages/medusa/src/services/product-category.ts:20](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/services/product-category.ts#L20)
+[packages/medusa/src/services/product-category.ts:24](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L24)
 
 ___
 
@@ -92,7 +116,25 @@ TransactionBaseService.transactionManager\_
 
 #### Defined in
 
-[packages/medusa/src/services/product-category.ts:21](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/services/product-category.ts#L21)
+[packages/medusa/src/services/product-category.ts:26](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L26)
+
+___
+
+### Events
+
+▪ `Static` **Events**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `CREATED` | `string` |
+| `DELETED` | `string` |
+| `UPDATED` | `string` |
+
+#### Defined in
+
+[packages/medusa/src/services/product-category.ts:29](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L29)
 
 ## Methods
 
@@ -131,21 +173,21 @@ TransactionBaseService.atomicPhase\_
 
 #### Defined in
 
-[packages/medusa/src/interfaces/transaction-base-service.ts:48](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/interfaces/transaction-base-service.ts#L48)
+[packages/medusa/src/interfaces/transaction-base-service.ts:50](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/interfaces/transaction-base-service.ts#L50)
 
 ___
 
 ### create
 
-▸ **create**(`productCategory`): `Promise`<`ProductCategory`\>
+▸ **create**(`productCategoryInput`): `Promise`<`ProductCategory`\>
 
 Creates a product category
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `productCategory` | `CreateProductCategoryInput` | params used to create |
+| Name | Type |
+| :------ | :------ |
+| `productCategoryInput` | `CreateProductCategoryInput` |
 
 #### Returns
 
@@ -155,7 +197,7 @@ created product category
 
 #### Defined in
 
-[packages/medusa/src/services/product-category.ts:108](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/services/product-category.ts#L108)
+[packages/medusa/src/services/product-category.ts:132](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L132)
 
 ___
 
@@ -179,13 +221,13 @@ a promise
 
 #### Defined in
 
-[packages/medusa/src/services/product-category.ts:125](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/services/product-category.ts#L125)
+[packages/medusa/src/services/product-category.ts:191](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L191)
 
 ___
 
 ### listAndCount
 
-▸ **listAndCount**(`selector`, `config?`): `Promise`<[`ProductCategory`[], `number`]\>
+▸ **listAndCount**(`selector`, `config?`, `treeSelector?`): `Promise`<[`ProductCategory`[], `number`]\>
 
 Lists product category based on the provided parameters and includes the count of
 product category that match the query.
@@ -196,6 +238,7 @@ product category that match the query.
 | :------ | :------ |
 | `selector` | `QuerySelector`<`ProductCategory`\> |
 | `config` | `FindConfig`<`ProductCategory`\> |
+| `treeSelector` | `QuerySelector`<`ProductCategory`\> |
 
 #### Returns
 
@@ -207,13 +250,13 @@ an array containing the product category as
 
 #### Defined in
 
-[packages/medusa/src/services/product-category.ts:38](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/services/product-category.ts#L38)
+[packages/medusa/src/services/product-category.ts:55](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L55)
 
 ___
 
 ### retrieve
 
-▸ **retrieve**(`productCategoryId`, `config?`): `Promise`<`ProductCategory`\>
+▸ **retrieve**(`productCategoryId`, `config?`, `selector?`): `Promise`<`ProductCategory`\>
 
 Retrieves a product category by id.
 
@@ -223,6 +266,7 @@ Retrieves a product category by id.
 | :------ | :------ | :------ |
 | `productCategoryId` | `string` | the id of the product category to retrieve. |
 | `config` | `FindConfig`<`ProductCategory`\> | the config of the product category to retrieve. |
+| `selector` | `Selector`<`ProductCategory`\> | - |
 
 #### Returns
 
@@ -232,7 +276,7 @@ the product category.
 
 #### Defined in
 
-[packages/medusa/src/services/product-category.ts:70](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/services/product-category.ts#L70)
+[packages/medusa/src/services/product-category.ts:92](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L92)
 
 ___
 
@@ -256,7 +300,32 @@ TransactionBaseService.shouldRetryTransaction\_
 
 #### Defined in
 
-[packages/medusa/src/interfaces/transaction-base-service.ts:29](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/interfaces/transaction-base-service.ts#L29)
+[packages/medusa/src/interfaces/transaction-base-service.ts:31](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/interfaces/transaction-base-service.ts#L31)
+
+___
+
+### update
+
+▸ **update**(`productCategoryId`, `productCategoryInput`): `Promise`<`ProductCategory`\>
+
+Updates a product category
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `productCategoryId` | `string` | id of product category to update |
+| `productCategoryInput` | `UpdateProductCategoryInput` | parameters to update in product category |
+
+#### Returns
+
+`Promise`<`ProductCategory`\>
+
+updated product category
+
+#### Defined in
+
+[packages/medusa/src/services/product-category.ts:156](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/services/product-category.ts#L156)
 
 ___
 
@@ -280,4 +349,4 @@ TransactionBaseService.withTransaction
 
 #### Defined in
 
-[packages/medusa/src/interfaces/transaction-base-service.ts:13](https://github.com/medusajs/medusa/blob/6dafb5154/packages/medusa/src/interfaces/transaction-base-service.ts#L13)
+[packages/medusa/src/interfaces/transaction-base-service.ts:14](https://github.com/hasahmad/medusa/blob/cf8962474/packages/medusa/src/interfaces/transaction-base-service.ts#L14)
